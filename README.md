@@ -12,6 +12,8 @@
  - [111hav0c](https://github.com/111hav0c)
  - [drnightshadow](https://github.com/drnightshadow)
 
+# Known Bugs
+ - /Data wont mount (known samsung issue)
 # Checks
 Blocking checks
 - [x] Correct screen/recovery size - Tested by 111hav0c
