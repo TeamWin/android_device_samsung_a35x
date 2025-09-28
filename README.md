@@ -1,20 +1,26 @@
 # Android device tree for samsung SM-A356E (a35x)
 
-# How to build
-## Sync twrp-12.1
-    repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1; repo sync
-## Clone Galaxy A35 Tree
-    git clone https://github.com/teamwin/android_device_samsung_a35x.git -b android-12.1 device/samsung/a35x
-## Build
-    export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_a35x-eng; mka recoveryimage
+# DISCLAIMER
+This branch uses an experimental twrp-14.1 manifest, there is no guarentees this will work yet, for a stable branch use android-12.1 with the twrp-12.1 manifest
 
-# Contributors
- - [111hav0c](https://github.com/111hav0c) - Tester
- - [drnightshadow](https://github.com/drnightshadow) - Tester
- - [Physwizz](https://github.com/physwizz) - Thanks to Physwizz for the Custom Kernel
+# Testers
+ - [111hav0c](https://github.com/111hav0c)
+ - [drnightshadow](https://github.com/drnightshadow)
 
-# Known Bugs
- - /Data wont mount (known samsung issue)
+# How to Build
+## Initialise repo
+    repo init -u https://github.com/SavedByLight/platform_manifest_twrp_aosp.git -b twrp-14.1
+## Repo Sync
+    repo sync
+## Clone A35 Tree
+    git clone https://github.com/SavedByLight/android_device_samsung_a35x -b staging-14.1 device/samsung/a35x
+## Configure the A35x
+    export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_a35x-ap2a-eng;
+## Repopick (my twrp-14 manifest only)
+    repopick 7922
+## Make Recovery Image
+    mka recoveryimage
+
 # Checks
 Blocking checks
 - [x] Correct screen/recovery size - Tested by 111hav0c
@@ -39,7 +45,7 @@ Minor checks
 - [x] battery level - Tested by drnightshadow
 - [x] temperature - Tested by drnightshadow
 - [ ] encrypted backups (Untested)
-- [x] input devices via USB (USB-OTG) - keyboard, mouse and disks (not supported by the device) - Tested by drnightshadow
+- [x] input devices via USB (USB-OTG) - keyboard, mouse and disks (not supported by the device) (input devices working, storage devices broken) - Tested by drnightshadow
 - [x] USB mass storage export - Tested by drnightshadow
 - [x] set brightness - Tested by drnightshadow
 - [x] vibrate - Tested by 111hav0c
