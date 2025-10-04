@@ -11,7 +11,8 @@
 # Contributors
  - [111hav0c](https://github.com/111hav0c) - Tester
  - [drnightshadow](https://github.com/drnightshadow) - Tester
- - [Physwizz](https://github.com/physwizz) - Thanks to Physwizz for the Custom Kernel
+ - [Physwizz](https://github.com/physwizz) - Thanks to Physwizz for the Enforcing Kernel
+ - [Ravindu644](https://github.com/ravindu644) - Thanks for the Permissive Kernel
 
 # Known Bugs
  - /Data wont mount (known samsung issue)
