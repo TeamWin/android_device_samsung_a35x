@@ -9,4 +9,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_a35x.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_a35x-ap2a-eng 
+    twrp_a35x-eng 

@@ -25,7 +25,7 @@ PRODUCT_MODEL := SM-A356B
 PRODUCT_MANUFACTURER := samsung
 
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/a35x/recovery/root,recovery/root)
+#PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/a35x/recovery/root,recovery/root)
 
 # Charger
 PRODUCT_PACKAGES += \

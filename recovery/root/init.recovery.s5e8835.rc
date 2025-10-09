@@ -2,6 +2,7 @@ on init
     write /proc/sys/kernel/hung_task_timeout_secs 0
 
     start watchdogd
+    setprop logd.ready true
     
 # Unlink /efs > /mnt/vendor/efs
     rm /efs
