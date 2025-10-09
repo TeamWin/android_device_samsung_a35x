@@ -6,7 +6,7 @@
 ## Clone Galaxy A35 Tree
     git clone https://github.com/teamwin/android_device_samsung_a35x.git -b android-14.1 device/samsung/a35x
 ## Build
-    export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_a35x-eng; mka recoveryimage
+    export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_a35x-ap2a-eng; mka recoveryimage
 
 # Contributors
  - [111hav0c](https://github.com/111hav0c) - Tester
