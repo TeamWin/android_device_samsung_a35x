@@ -184,7 +184,7 @@
         <fqname>@1.0::IThermal/default</fqname>
         <fqname>@2.0::IThermal/default</fqname>
     </hal>
-        <hal format="hidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>android.hidl.allocator</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
