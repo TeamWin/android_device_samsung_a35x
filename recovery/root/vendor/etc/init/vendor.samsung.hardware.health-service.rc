@@ -1,0 +1,11 @@
+on post-fs
+    start vendor.health-samsung
+
+service vendor.health-samsung /vendor/bin/hw/vendor.samsung.hardware.health-service
+    class hal
+    user root
+    group root
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
+    capabilities WAKE_ALARM BLOCK_SUSPEND
+    file /dev/kmsg w
+    seclabel u:r:recovery:s0
