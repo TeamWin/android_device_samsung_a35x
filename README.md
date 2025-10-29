@@ -1,4 +1,4 @@
-# Android device tree for samsung SM-A356E (a35x)
+# Android device tree for samsung SM-A366E (a36x)
 
 # How to build
 ## Sync twrp-12.1
