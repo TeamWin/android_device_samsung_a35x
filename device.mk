@@ -13,7 +13,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
-    fastbootd \
+    fastbootd 
 
 # Health
 PRODUCT_PACKAGES += \
@@ -24,4 +24,6 @@ PRODUCT_PACKAGES += \
     otapreopt_script \
     update_engine \
     update_engine_sideload \
-    update_verifier \
+    update_verifier 
+    
+PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := false
