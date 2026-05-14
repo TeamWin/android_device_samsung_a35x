@@ -34,4 +34,5 @@ on fs
 service watchdogd /system/bin/watchdogd 10 20
     class core
     oneshot
+    user root
     seclabel u:r:watchdogd:s0
