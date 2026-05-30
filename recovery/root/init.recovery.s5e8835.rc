@@ -20,6 +20,7 @@ on late-init
     setprop sys.usb.config adb
 
 on boot
+    start health-hal-2-1
 
 on fs
     wait /dev/block/platform/${ro.boot.boot_devices}
