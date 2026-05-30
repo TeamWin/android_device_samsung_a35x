@@ -1,7 +1,7 @@
 # Android device tree for samsung SM-A356E (a35x)
 
 # How to build
-## Sync twrp-14.1
+## Sync twrp-14.1 (Supports Orangefox R12)
     repo init -u https://github.com/SavedByLight/platform_manifest_twrp_aosp.git -b twrp-14.1; repo sync
 ## Clone Galaxy A35 Tree
     git clone https://github.com/teamwin/android_device_samsung_a35x.git -b android-14.1 device/samsung/a35x
